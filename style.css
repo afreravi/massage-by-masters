@@ -1,0 +1,33 @@
+/*  CSS */
+
+nav{
+	background: #A09885;
+	padding: 0;
+	margin: 0 0;
+	border-radius: 10px;
+}
+nav ul{
+	list-style: none;
+	margin-left: 7%;
+	padding: 0;
+}
+nav li a{
+	color: #000;
+	display: block;
+	float: left;
+	padding: 20px;
+	text-decoration: none;
+}
+nav li.active a, nav li a:hover{
+	background: #322F2C;
+	color:#fff;
+}  
+/*-------------- MEDIA !!!------------------- */
+@media screen and (max-width:740px){
+	nav li a{
+		width: 100%;
+	}
+	nav li a:hover, nav li.active a{
+		width: 70%;
+	}
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+	function mymap(){
+		var location = new google.maps.LatLng(19.253047, 73.136773);
+		var mapCanvas = document.getElementById('map');
+		var mapOptions = {
+			center: location,
+			zoom: 16,
+
+		};
+		var map = new google.maps.Map(mapCanvas, mapOptions);
+	}
+
+</script>
+
+
+</head>
+<body>
+	<h1>My Home Google Map</h1>
+	<div id="map" style="width:800px;height:400px;background:yellow"></div><br>
+	<script src="https://maps.googleapis.com/maps/api/js?callback=mymap"></script>
+
+</body>
+</html>
+
